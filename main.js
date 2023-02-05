@@ -74,4 +74,56 @@ function checkAge (age){
 checkAge(19);
 checkAge(14);
 
-//experssion
+//arrow function
+// function ask(question, yes, no) {
+
+//     if (confirm(question)) yes();
+//     else no();
+
+//   }
+  
+//   ask(
+//     "Do you agree?",
+//     () => alert("You agreed."),
+//     () => alert("You canceled the execution.")
+//   );
+
+//object
+
+let user = {};
+
+user.name2 = "John";
+user.surname = "Smith";
+user.name2 = "Pete";
+delete user.name2;
+
+//Date
+const user79 = new Date();
+console.log(user79.getMonth());
+
+//Random
+let random = Math.random() *3;
+console.log(Math.floor(random));
+
+//Math function
+
+// let firstNumber = +prompt("Enter first number");
+// let seccondNumber = +prompt("Enter seccond number");
+
+// alert(firstNumber +++ seccondNumber);
+
+//array
+const Country = ["Iran", "Germany", "Canada"];
+Country.push("Brazil");
+Country.push("India");
+Country.pop();
+
+Country.unshift("USA");
+Country.unshift("France");
+Country.shift();
+
+delete Country[1];
+
+console.log(Country);
+
+
