@@ -126,4 +126,46 @@ delete Country[1];
 
 console.log(Country);
 
+//Map
+
+const map = new Map();
+
+map.set(1 , "jack");
+map.set(2 , "john");
+map.set(3 , "mikel");
+
+console.log(map.get(1));
+console.log(map.size);
+
+//Destructuring
+
+let user2 = {
+    name : "John",
+    years: 17,
+}
+
+let {name:name2 , years:age , isAdmin = false } = user2;
+console.log(name2);
+
+//Date
+let now = new Date();
+console.log(`${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`);
+
+//Json
+
+let user3 = {
+    name: "ali",
+    age: 17,
+    job: "programmer"
+}
+
+let jsonTest = JSON.stringify(user3);
+console.log(jsonTest);
+
+//setTimeout and setInterval
+function sayname(){
+    console.log("Jack")
+}
+setTimeout(sayname, 3000);
+setInterval(sayname, 5000);
 
